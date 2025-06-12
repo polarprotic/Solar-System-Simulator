@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="icon1">
+        <i class="fa-solid fa-bars"></i>
+
+        <div id="sidebar">
+          <div class="center">
+            <h2>Manage Speed</h2>
+            <button onclick="def()">Default Speed/Play</button>
+            <button onclick="stop()">Stop</button>
+             <button onclick="reset()">Reset</button>
+          </div>
+
+          <div class="Planet" id="Mercury">
+            <h2>Mercury</h2>
+          
+            <input
+              type="number"
+              id="changeMer"
+              placeholder="Enter speed (ms)"
+              oninput="funcMer()"
+            />
+          </div>
+
+          <div class="Planet" id="Venus">
+            <h2>Venus</h2>
+            <input
+              type="number"
+              id="changeVen"
+              placeholder="Enter speed (ms)"
+              oninput="funcVen()"
+            />
+          </div>
+
+          <div class="Planet" id="Earth">
+            <h2>Earth</h2>
+            <input
+              type="number"
+              id="changeEar"
+              placeholder="Enter speed (ms)"
+              oninput="funcEar()"
+            />
+          </div>
+
+          <div class="Planet" id="Mars">
+            <h2>Mars</h2>
+            <input
+              type="number"
+              id="changeMars"
+              placeholder="Enter speed (ms)"
+              oninput="funcMars()"
+            />
+          </div>
+
+          <div class="Planet" id="Jupiter">
+            <h2>Jupiter</h2>
+            <input
+              type="number"
+              id="changeJup"
+              placeholder="Enter speed (ms)"
+              oninput="funcJup()"
+            />
+          </div>
+
+          <div class="Planet" id="Saturn">
+            <h2>Saturn</h2>
+            <input
+              type="number"
+              id="changeSat"
+              placeholder="Enter speed (ms)"
+              oninput="funcSat()"
+            />
+          </div>
+
+          <div class="Planet" id="Uranus">
+            <h2>Uranus</h2>
+            <input
+              type="number"
+              id="changeUra"
+              placeholder="Enter speed (ms)"
+              oninput="funcUra()"
+            />
+          </div>
+
+          <div class="Planet" id="Neptune">
+            <h2>Neptune</h2>
+            <input
+              type="number"
+              id="changeNep"
+              placeholder="Enter speed (ms)"
+              oninput="funcNep()"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 class="nav-title">Solar System Simulator</h1>
+      <div id="icon2">
+        <i class="fa-solid fa-circle-info"></i>
+        <div id="info">
+          <div id="img">
+            <img id="image" src="Mercury2.png" alt="image" />
+          </div>
+          <div class="diameter"><p>Diameter:</p>
+          <span id = "value1">4880 Km</span></div>
+          <div class="revolution"><p>Orbital speed: </p>
+          <span id = "value2">87.97 days</span></div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="container">
+      <!-- SUN -->
+      <div class="sun"></div>
+      <!-- MERCURY -->
+      <div class="orbit orbitMer"></div>
+      <div id="mercury"></div>
+      <!-- VENUS -->
+      <div class="orbit orbitVen"></div>
+      <div id="venus"></div>
+      <!-- EARTH -->
+      <div class="orbit orbitEar"></div>
+      <div id="earth"></div>
+      <!-- MARS -->
+      <div class="orbit orbitMars"></div>
+      <div id="mars"></div>
+      <!-- JUPITER -->
+      <div class="orbit orbitJup"></div>
+      <div id="jupiter"></div>
+      <!-- SATURN -->
+      <div class="orbit orbitSat"></div>
+      <div id="saturn"></div>
+      <!-- URANUS -->
+      <div class="orbit orbitUra"></div>
+      <div id="uranus"></div>
+      <!-- NEPTUNE -->
+      <div class="orbit orbitNep"></div>
+      <div id="neptune"></div>
+    </div>
+
+    <script src="Three.js"></script>
+  </body>
+</html>
